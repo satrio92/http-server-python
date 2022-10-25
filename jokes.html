@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KelompokTiga</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="style.css" type="text/tailwindcss"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ['Poppins']
+            },
+            colors: {
+              clifford: "#da373d",
+              bluefish: "#5CE1E6",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        :root {
+          --black-gradient: linear-gradient(
+            144.39deg,
+            #ffffff -278.56%,
+            #6d6d6d -78.47%,
+            #11101d 91.61%
+          );
+          --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+        }
+
+        * {
+          scroll-behavior: smooth;
+        }
+
+        .text-gradient {
+          background: radial-gradient(
+            64.18% 64.18% at 71.16% 35.69%,
+            #def9fa 0.89%,
+            #bef3f5 17.23%,
+            #9dedf0 42.04%,
+            #7de7eb 55.12%,
+            #5ce1e6 71.54%,
+            #33bbcf 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+
+        .bg-blue-gradient {
+          background: linear-gradient(
+            157.81deg,
+            #def9fa -43.27%,
+            #bef3f5 -21.24%,
+            #9dedf0 12.19%,
+            #7de7eb 29.82%,
+            #5ce1e6 51.94%,
+            #33bbcf 90.29%
+          );
+        }
+
+        .bg-black-gradient {
+          background: linear-gradient(
+            144.39deg,
+            #ffffff -278.56%,
+            #6d6d6d -78.47%,
+            #11101d 91.61%
+          );
+        }
+
+        .bg-black-gradient-2 {
+          background: linear-gradient(
+            -168.39deg,
+            #ffffff -278.56%,
+            #6d6d6d -78.47%,
+            #11101d 91.61%
+          );
+        }
+
+        .bg-gray-gradient {
+          background: linear-gradient(
+            153.47deg,
+            rgba(255, 255, 255, 0) -341.94%,
+            #14101d 95.11%
+          );
+        }
+
+        .bg-discount-gradient {
+          background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+        }
+
+        .box-shadow {
+          box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+        }
+
+        .sidebar {
+          -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        @-webkit-keyframes slide-top {
+          0% {
+            -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+          }
+          100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes slide-top {
+          0% {
+            -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+          }
+          100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+        }
+
+        .feature-card:hover {
+          background: var(--black-gradient);
+          box-shadow: var(--card-shadow);
+        }
+
+        .feedback-container .feedback-card:last-child {
+          margin-right: 0px;
+        }
+
+        .feedback-card {
+          background: transparent;
+        }
+
+        .feedback-card:hover {
+          background: var(--black-gradient);
+        }
+
+        .blue__gradient {
+          background: linear-gradient(
+            180deg,
+            rgba(188, 165, 255, 0) 0%,
+            #214d76 100%
+          );
+          filter: blur(123px);
+        }
+
+        .pink__gradient {
+          background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+          filter: blur(900px);
+        }
+
+        .white__gradient {
+          background: rgba(255, 255, 255, 0.6);
+          filter: blur(750px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="bg-black-gradient pt-[30px] w-full font-poppins px-[171px] min-h-screen">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M16 0C12.8355 -3.77363e-08 9.74206 0.938383 7.11088 2.69649C4.47969 4.45459 2.42893 6.95345 1.21793 9.87706C0.00692588 12.8007 -0.309928 16.0177 0.307435 19.1214C0.924798 22.2251 2.44865 25.0761 4.68629 27.3137C6.92393 29.5513 9.77485 31.0752 12.8786 31.6926C15.9822 32.3099 19.1993 31.9931 22.1229 30.7821C25.0465 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16L24 16C24 17.5823 23.5308 19.129 22.6518 20.4446C21.7727 21.7602 20.5233 22.7855 19.0615 23.391C17.5997 23.9965 15.9911 24.155 14.4393 23.8463C12.8874 23.5376 11.462 22.7757 10.3431 21.6569C9.22432 20.538 8.4624 19.1126 8.15372 17.5607C7.84504 16.0089 8.00346 14.4003 8.60896 12.9385C9.21447 11.4767 10.2398 10.2273 11.5554 9.34824C12.871 8.46919 14.4177 8 16 8V0Z" fill="white"/>
+            <path d="M16 0C13.8989 -2.5056e-08 11.8183 0.413852 9.87706 1.21793C7.93585 2.022 6.17203 3.20055 4.68629 4.68629C3.20055 6.17203 2.022 7.93586 1.21793 9.87707C0.413852 11.8183 -3.17265e-07 13.8989 0 16H8C8 14.9494 8.20693 13.9091 8.60896 12.9385C9.011 11.9679 9.60028 11.086 10.3431 10.3431C11.086 9.60028 11.9679 9.011 12.9385 8.60896C13.9091 8.20693 14.9494 8 16 8V0Z" fill="#5CE1E6"/>
+              <circle cx="16" cy="16" r="5" fill="#5CE1E6"/>
+            <path d="M21 16C21 15.3434 20.8707 14.6932 20.6194 14.0866C20.3681 13.48 19.9998 12.9288 19.5355 12.4645C19.0712 12.0002 18.52 11.6319 17.9134 11.3806C17.3068 11.1293 16.6566 11 16 11C15.3434 11 14.6932 11.1293 14.0866 11.3806C13.48 11.6319 12.9288 12.0002 12.4645 12.4645C12.0002 12.9288 11.6319 13.48 11.3806 14.0866C11.1293 14.6932 11 15.3434 11 16L16 16H21Z" fill="white"/>
+          </svg>
+          <p class="text-lg text-white font-semibold">Kelompok<span class="text-bluefish">Tiga</span></p>
+        </div>
+        <ul class="flex items-center gap-[46px] text-white">
+          <li><a href="/" class="opacity-70">Home</a></li>
+          <li><a href="/quotes" class="opacity-70">Quotes</a></li>
+          <li><a href="/jokes">Jokes</a></li>
+          <li><a href="/about" class="opacity-70">About</a></li>
+        </ul>
+      </nav>
+      <header class="relative mt-[100px]">
+        <h1 class="text-gradient text-7xl text-center font-semibold">JOKES</h1>
+      </header>
+      <section class="mt-[64px] flex flex-col justify-center gap-5">
+        <div id="quote" class="text-xl text-center text-white font-medium">
+
+        </div>
+        <div class="flex justify-center">
+          <button class="px-8 py-3 rounded-md bg-blue-gradient text-black font-semibold" onclick="getJokes()">Generate New Jokes</button>
+        </div>
+      </section>
+    </main>
+
+    
+
+    <script>
+      let quote = document.querySelector('#quote')
+
+      const element = document.createElement("p")
+
+      function setJokes(data) {
+        let content = data.value
+        console.log(content)
+        element.innerHTML = content;
+        quote.appendChild(element);
+      } 
+
+      function getJokes() {
+        fetch('https://api.chucknorris.io/jokes/random')
+        .then(res => res.json() )
+        .then(data => { setJokes(data) })
+        .catch(err => {
+          console.log(err)
+        })
+      }
+      getJokes()
+  </script>
+  </body>
+</html>
